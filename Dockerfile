@@ -1,6 +1,6 @@
 # Build the authorino binary
 # https://catalog.redhat.com/software/containers/ubi9/go-toolset
-FROM --platform=$BUILDPLATFORM registry.access.redhat.com/ubi9/go-toolset:1.21 AS builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.21 AS builder
 ARG TARGETOS 
 ARG TARGETARCH
 USER root
